@@ -29,7 +29,7 @@ nav{
     ul{
         display: grid;
         list-style: none;
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(5, auto);
         gap: 0 15px;
         a{
             color: white;
@@ -88,5 +88,44 @@ section{
         margin-bottom: 35px;
         width: 75%;
 
+    }
+    .banner{
+        width: 60vw;
+    }
+}
+
+form{
+    margin: auto;
+    width: 40vw;
+    display: grid;
+    grid-template-columns: auto;
+    font-size: 1.2rem;
+    gap: 20px 0;
+    justify-items: center;
+
+    *{
+        width: inherit;
+    }
+    input{
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
+
+    .helptext{
+        margin: 2px 0 7px;
+        padding-left: 15px;
+        font-size: 0.7rem;
+        color: rgba(125, 125, 255, 0.5);
+        *{
+            list-style: none;
+        }
+    }
+
+    button{
+        padding: 10px 10px;
+        background-color: rgb(100, 100, 255);
+        border-color: rgb(32, 32, 85);
+        font-size: 1.3rem;
+        color: white;
     }
 }
