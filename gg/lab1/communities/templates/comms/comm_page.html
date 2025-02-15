@@ -1,0 +1,10 @@
+{% extends 'layout.html' %} 
+{% block title %} {{ comm.title }} {% endblock %}
+{% block content %}
+<section class="page">
+    <img class="banner" src="{{ comm.banner.url }}" alt="{{ comm.name }}" />
+    <h1>{{ comm.name }}</h1>
+    <p class="date">{{ comm.date }}</p>
+    <p class="txt">{{ comm.description }}</p>
+</section>
+{% endblock %}

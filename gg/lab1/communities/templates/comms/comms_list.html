@@ -1,0 +1,16 @@
+{% extends 'layout.html' %} {% block title %} Сообщества {% endblock %}
+{% block content %}
+<section>
+    <h1>Сообщества</h1>
+
+    {% for comm in comms %}
+    <article class="comm">
+        <h2>
+            <a href="{%  url 'comms:page' slug=comm.slug %}"> {{ comm.name }} </a>
+        </h2>
+        <p class="date">{{ comm.date }}</p>
+        <p class="txt">{{ comm.description }}</p>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(24, 24, 26);
+    color: rgb(125, 125, 255);
+    
+    
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+nav{
+    background-color: rgb(49, 49, 170);
+    padding: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+
+    ul{
+        display: grid;
+        list-style: none;
+        grid-template-columns: repeat(5, auto);
+        gap: 0 15px;
+        a{
+            color: white;
+            text-decoration: none;
+
+            &:hover{
+                color: rgb(69, 196, 255);
+            }
+        }
+    }
+}
+
+section{
+
+    article{
+        text-align: center;
+        h2{
+            margin-top: 7px;
+            a{
+                color: white;
+                text-decoration: none;
+                font-size: 1.6rem;
+
+                &:hover{
+                    color: rgb(69, 196, 255);
+                }
+            }
+        }
+        .txt{
+            margin: auto;
+            margin-bottom: 35px;
+            width: 75%;
+
+        }
+        .date{
+            color: rgba(125, 125, 255, 0.5);
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.page{
+    text-align: center;
+    h1{
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+    .date{
+        color: rgba(125, 125, 255, 0.5);
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+    .txt{
+        margin: auto;
+        margin-bottom: 35px;
+        width: 75%;
+
+    }
+    .banner{
+        width: 60vw;
+    }
+}
+
+form{
+    margin: auto;
+    width: 40vw;
+    display: grid;
+    grid-template-columns: auto;
+    font-size: 1.2rem;
+    gap: 20px 0;
+    justify-items: center;
+
+    *{
+        width: inherit;
+    }
+    input{
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
+
+    .helptext{
+        margin: 2px 0 7px;
+        padding-left: 15px;
+        font-size: 0.7rem;
+        color: rgba(125, 125, 255, 0.5);
+        *{
+            list-style: none;
+        }
+    }
+
+    button{
+        padding: 10px 10px;
+        background-color: rgb(100, 100, 255);
+        border-color: rgb(32, 32, 85);
+        font-size: 1.3rem;
+        color: white;
+    }
+}
